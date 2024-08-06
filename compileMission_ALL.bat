@@ -1,0 +1,2 @@
+call compileMission_VR.bat
+call compileMission_Tanoa.bat
