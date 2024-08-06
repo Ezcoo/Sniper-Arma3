@@ -34,6 +34,10 @@ xcopy "%destinationpath%\%missionfolder%\initPlayerLocal.sqf" "%repopath%\%missi
 
 xcopy "%destinationpath%\%missionfolder%\initPlayerServer.sqf" "%repopath%\%missionfolder%\initPlayerServer.sqf" /Y /-I
 
+xcopy "%destinationpath%\%missionfolder%\initServer.sqf" "%repopath%\%missionfolder%\initServer.sqf" /Y /-I
+
+xcopy "%destinationpath%\%missionfolder%\init.sqf" "%repopath%\%missionfolder%\init.sqf" /Y /-I
+
 echo - Copying map specific resources (Rsc) for map %mapname%...
 
 xcopy "%destinationpath%\%missionname%.%mapname%\rsc\mapSpecific" "%repopath%\%missionfolder%\rsc\mapSpecific" /E /S /Y /I

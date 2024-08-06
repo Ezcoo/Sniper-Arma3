@@ -20,7 +20,9 @@ rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\functions"
 rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\rsc\common"
 rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\initPlayerLocal.sqf"
 rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\initPlayerServer.sqf"
-
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\initServer.sqf"
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\init.sqf"
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\description.ext"
 
 echo -- Copying common files to repository folder...
 
@@ -37,3 +39,9 @@ echo - Copying common init files...
 xcopy "%destinationpath%\%missionname%.VR\initPlayerLocal.sqf" "%destinationpath%\%missionfolder%\initPlayerLocal.sqf" /Y /-I
 
 xcopy "%destinationpath%\%missionname%.VR\initPlayerServer.sqf" "%destinationpath%\%missionfolder%\initPlayerServer.sqf" /Y /-I
+
+xcopy "%destinationpath%\%missionname%.VR\initServer.sqf" "%destinationpath%\%missionfolder%\initServer.sqf" /Y /-I
+
+xcopy "%destinationpath%\%missionname%.VR\init.sqf" "%destinationpath%\%missionfolder%\init.sqf" /Y /-I
+
+xcopy "%destinationpath%\%missionname%.VR\description.ext" "%destinationpath%\%missionfolder%\description.ext" /Y /-I
