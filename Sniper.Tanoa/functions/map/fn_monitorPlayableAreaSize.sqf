@@ -1,6 +1,5 @@
 private _allPlayers = call BIS_fnc_listPlayers;
 private _previousPlayableAreaSize = [call sniper_fnc_getPlayerCount] call sniper_fnc_getPlayableAreaRadius;
-diag_log _previousPlayableAreaSize;
 
 while { true } do {
 
