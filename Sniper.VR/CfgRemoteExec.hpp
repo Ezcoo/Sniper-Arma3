@@ -6,9 +6,9 @@ class CfgRemoteExec
 	{
 
 		// Only whitelisted functions are allowed. Other values: 0 = remote execution blocked, 2 = remote execution fully allowed (no whitelist)
-		mode = 1;
+		mode = 2;
 		// JIP flag can not be set by default (unless overriden by function or command declaration itself). Other values: 1 = JIP flag can be set
-		jip = 0;
+		jip = 1;
 
 		// Note that 'allowedTargets' properties in the list below can target all machines by default! Changing them on a case-by-case basis is highly recommended.
 		// Other (and recommended) values: 1 = only clients as allowed target, 2 = only server as allowed target

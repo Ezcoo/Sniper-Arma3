@@ -18,6 +18,7 @@ class CfgFunctions
 			class getOutOfZoneArtySpread { file = "functions\cfg\fn_getOutOfZoneArtySpread.sqf"; };
 			class getParachuteSpawnAltitude { file = "functions\cfg\fn_getParachuteSpawnAltitude.sqf"; };
 			class getPlayableAreaRadius { file = "functions\cfg\fn_getPlayableAreaRadius.sqf"; };
+			class getPlayerBounty { file = "functions\cfg\fn_getPlayerBounty.sqf"; };
 			class getPlayerCount { file = "functions\cfg\fn_getPlayerCount.sqf"; };
 
 		};
@@ -26,6 +27,23 @@ class CfgFunctions
 		{
 
 			class helloWorld { file = "functions\core\fn_helloWorld.sqf"; };
+
+		};
+
+		class events
+		{
+
+			class playerKilled { file = "functions\events\fn_playerKilled.sqf"; };
+			class playerKilledServer { file = "functions\events\fn_playerKilledServer.sqf"; };
+			class playerRespawn { file = "functions\events\fn_playerRespawn.sqf"; };
+			class setupPlayerEHs { file = "functions\events\fn_setupPlayerEHs.sqf"; };
+
+		};
+
+		class init
+		{
+
+			class playerConnected { file = "functions\init\fn_playerConnected.sqf"; };
 
 		};
 
@@ -44,6 +62,8 @@ class CfgFunctions
 			class callArtyOnPlayer { file = "functions\misc\fn_callArtyOnPlayer.sqf"; };
 			class checkIfPlayerInSafezone { file = "functions\misc\fn_checkIfPlayerInSafezone.sqf"; };
 			class monitorPlayersSafezone { file = "functions\misc\fn_monitorPlayersSafezone.sqf"; };
+			class sendSystemChat { file = "functions\misc\fn_sendSystemChat.sqf"; };
+			class setPlayerBounty { file = "functions\misc\fn_setPlayerBounty.sqf"; };
 			class spawnParachute { file = "functions\misc\fn_spawnParachute.sqf"; };
 
 		};
