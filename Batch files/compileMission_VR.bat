@@ -28,6 +28,8 @@ echo - Copying common resources (Rsc)...
 
 xcopy "%destinationpath%\%missionfolder%\rsc\common" "%repopath%\%missionfolder%\rsc\common" /E /S /Y /I
 
+xcopy "%destinationpath%\%missionfolder%\rsc\CfgSounds.hpp" "%repopath%\%missionfolder%\rsc\CfgSounds.hpp" /Y /-I
+
 echo - Copying common init files...
 
 xcopy "%destinationpath%\%missionfolder%\initPlayerLocal.sqf" "%repopath%\%missionfolder%\initPlayerLocal.sqf" /Y /-I

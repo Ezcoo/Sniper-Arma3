@@ -22,6 +22,8 @@ echo - Copying common resources (Rsc)...
 
 xcopy "%sourcepath%\%missionname%.VR\rsc\common" "%dedicatedserverpath%\%missionfolder%\rsc\common" /E /S /Y /I
 
+xcopy "%sourcepath%\%missionname%.VR\rsc\CfgSounds.hpp" "%dedicatedserverpath%\%missionfolder%\rsc\CfgSounds.hpp" /Y /-I
+
 echo - Copying common init files...
 
 xcopy "%sourcepath%\%missionname%.VR\initPlayerLocal.sqf" "%dedicatedserverpath%\%missionfolder%\initPlayerLocal.sqf" /Y /-I
