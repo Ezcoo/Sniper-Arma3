@@ -40,6 +40,13 @@ class CfgFunctions
 
 		};
 
+		class fx
+		{
+
+			class playSoundUI { file = "functions\fx\fn_playSoundUI.sqf"; };
+
+		};
+
 		class init
 		{
 
