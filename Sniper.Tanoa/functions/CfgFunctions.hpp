@@ -68,6 +68,7 @@ class CfgFunctions
 
 			class callArtyOnPlayer { file = "functions\misc\fn_callArtyOnPlayer.sqf"; };
 			class checkIfPlayerInSafezone { file = "functions\misc\fn_checkIfPlayerInSafezone.sqf"; };
+			class monitorPlayersProximity { file = "functions\misc\fn_monitorPlayersProximity.sqf"; };
 			class monitorPlayersSafezone { file = "functions\misc\fn_monitorPlayersSafezone.sqf"; };
 			class resetLocalPlayerBounty { file = "functions\misc\fn_resetLocalPlayerBounty.sqf"; };
 			class sendSystemChat { file = "functions\misc\fn_sendSystemChat.sqf"; };
