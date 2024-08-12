@@ -19,8 +19,9 @@ sleep 1;
 [] spawn sniper_fnc_monitorPlayersSafezone;
 
 addMissionEventHandler ["PlayerConnected", {
-	diag_log "Client connected";
-    diag_log _this;
+    params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
+
+    [] call sniper_fnc_playerConnected;
 }];
 
 
