@@ -8,5 +8,7 @@ _player addEventHandler ["Respawn", {
         player setUnitLoadout _loadout;
     };
 
+    player enableStamina false;
+
     call sniper_fnc_spawnParachute;
 }];
