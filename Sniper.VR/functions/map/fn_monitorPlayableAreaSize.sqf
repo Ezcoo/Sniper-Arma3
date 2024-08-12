@@ -1,12 +1,14 @@
-private _allPlayers = BIS_fnc_listPlayers;
-private _previousPlayableAreaSize = [random 101] call sniper_fnc_playableAreaDiameter;
+private _allPlayers = call BIS_fnc_listPlayers;
+private _previousPlayableAreaSize = [call sniper_fnc_getPlayerCount] call sniper_fnc_getPlayableAreaRadius;
 diag_log _previousPlayableAreaSize;
 
 while { true } do {
 
-    private _currentPlayableAreaSize = [random 101] call sniper_fnc_playableAreaDiameter;
+    private _currentPlayableAreaSize = [call sniper_fnc_getPlayerCount] call sniper_fnc_getPlayableAreaRadius;
 
     diag_log _currentPlayableAreaSize;
+
+    [_previousPlayableAreaSize] call sniper_fnc_drawPlayableArea;
 
     if (_currentPlayableAreaSize != _previousPlayableAreaSize) then {
 
@@ -18,7 +20,7 @@ while { true } do {
         _previousPlayableAreaSize = _newAreaSize;
     };
 
-    sleep 10;
+    sleep 2;
 
     hint "NEW DIAMETER!!!";
     diag_log "NEW DIAMETER!!!";

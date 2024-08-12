@@ -8,9 +8,11 @@ while {surfaceIsWater _centerOfPlayableArea} do {
     _centerOfPlayableArea = [random _mapSize, random _mapSize];
 };
 
-// [_centerOfPlayableArea] call sniper_fnc_drawPlayableArea;
-
 CENTER_OF_PLAYABLE_AREA = _centerOfPlayableArea;
+
+[] spawn sniper_fnc_monitorPlayableAreaSize;
+
+sleep 1;
 
 [] spawn sniper_fnc_monitorPlayersSafezone;
 
