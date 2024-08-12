@@ -1,6 +1,6 @@
 params ["_player"];
 
-private _playerInSafezone = (getPosASL _player) inArea "Safezone";
+private _playerInSafezone = (getPosASL _player) inArea "OuterSafezone";
 private _artyProbability = call sniper_fnc_getArtyProbability;
 
 systemChat "Checking if player in safezone...";
