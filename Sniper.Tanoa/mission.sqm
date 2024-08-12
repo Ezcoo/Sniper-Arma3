@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2859.5623,16.669413,4375.2241};
-		dir[]={0.68445468,-0.39992666,0.60957402};
-		up[]={0.2986553,0.91654718,0.26598185};
-		aside[]={0.66507661,1.4901161e-008,-0.74677521};
+		pos[]={9310.0918,218.03342,4160.271};
+		dir[]={0.82874799,-0.55352849,0.082359038};
+		up[]={0.55081522,0.83283025,0.05473873};
+		aside[]={0.098890543,0,-0.99509835};
 	};
 };
 binarizationWanted=0;
@@ -46,7 +46,7 @@ dlcs[]=
 {
 	"Expansion"
 };
-randomSeed=4074506;
+randomSeed=16329352;
 class ScenarioData
 {
 	author="ezcoo";
@@ -56,7 +56,7 @@ class Mission
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0;
+		startWeather=0.30000001;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0;
@@ -64,9 +64,12 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2035;
-		day=28;
-		hour=13;
-		minute=37;
+		month=6;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogBase=250;
+		forecastFogBase=250;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -85,7 +88,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2869.3147,5.0014391,4390.4141};
+						position[]={9239.6709,8.2320299,3828.9343};
 					};
 					side="West";
 					flags=7;
@@ -95,12 +98,14 @@ class Mission
 					};
 					id=1;
 					type="B_T_ghillie_tna_F";
+					atlOffset=5.3405762e-005;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=0;
+			atlOffset=5.3405762e-005;
 		};
 	};
 };
