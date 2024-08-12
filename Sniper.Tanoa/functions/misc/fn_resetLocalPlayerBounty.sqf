@@ -1,0 +1,1 @@
+PLAYER_BOUNTY = 50;
