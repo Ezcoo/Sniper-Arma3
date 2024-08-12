@@ -6,13 +6,9 @@ while { true } do {
 
     private _currentPlayableAreaSize = [call sniper_fnc_getPlayerCount] call sniper_fnc_getPlayableAreaRadius;
 
-    diag_log _currentPlayableAreaSize;
-
     [_previousPlayableAreaSize] call sniper_fnc_drawPlayableArea;
 
     if (_currentPlayableAreaSize != _previousPlayableAreaSize) then {
-
-        hint "Trying to change area size now!";
 
         sleep 2;
 
@@ -22,6 +18,4 @@ while { true } do {
 
     sleep 2;
 
-    hint "NEW DIAMETER!!!";
-    diag_log "NEW DIAMETER!!!";
 };
