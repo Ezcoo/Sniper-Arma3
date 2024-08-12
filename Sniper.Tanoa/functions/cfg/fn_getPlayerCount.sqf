@@ -1,3 +1,3 @@
-private _playerCount = 19;
+private _playerCount = 1;
 
 _playerCount;
