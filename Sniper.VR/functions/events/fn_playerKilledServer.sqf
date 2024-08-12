@@ -4,4 +4,4 @@ private _systemChatMessage = format ["%1 has been killed by %2! They have been r
 
 [_systemChatMessage] remoteExec ["sniper_fnc_sendSystemChat"];
 
-["notification1"] remoteExec ["sniper_fnc_playSoundUI", _killer];
+["killNotification"] remoteExec ["sniper_fnc_playSoundUI", _killer];
