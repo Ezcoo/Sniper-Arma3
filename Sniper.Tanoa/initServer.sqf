@@ -10,11 +10,18 @@ while {surfaceIsWater _centerOfPlayableArea} do {
 
 CENTER_OF_PLAYABLE_AREA = _centerOfPlayableArea;
 
+publicVariable "CENTER_OF_PLAYABLE_AREA";
+
 [] spawn sniper_fnc_monitorPlayableAreaSize;
 
 sleep 1;
 
 [] spawn sniper_fnc_monitorPlayersSafezone;
+
+addMissionEventHandler ["PlayerConnected", {
+	diag_log "Client connected";
+    diag_log _this;
+}];
 
 
 // TODO: Move spawning logic in its own function
