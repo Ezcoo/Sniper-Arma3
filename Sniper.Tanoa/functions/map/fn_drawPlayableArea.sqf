@@ -1,13 +1,13 @@
 params ["_areaDiameter"];
 
-if (!isNil "PlayableArea") then {
-    deleteMarkerLocal "PlayableArea";
+if (!isNil "Safezone") then {
+    deleteMarkerLocal "Safezone";
 };
 
-private _playableAreaMarker = createMarkerLocal ["PlayableArea", CENTER_OF_PLAYABLE_AREA];
+private _SafezoneMarker = createMarkerLocal ["Safezone", CENTER_OF_PLAYABLE_AREA];
 
-"PlayableArea" setMarkerShapeLocal "ELLIPSE";
-"PlayableArea" setMarkerSizeLocal [_areaDiameter, _areaDiameter];
-"PlayableArea" setMarkerBrushLocal "Border";
+"Safezone" setMarkerShapeLocal "ELLIPSE";
+"Safezone" setMarkerSizeLocal [_areaDiameter, _areaDiameter];
+"Safezone" setMarkerBrushLocal "Border";
 // Broadcast updated marker to all clients
-"PlayableArea" setMarkerColor "ColorRed";
+"Safezone" setMarkerColor "ColorRed";

@@ -33,6 +33,15 @@ class CfgFunctions
 
 		};
 
+		class misc
+		{
+
+			class callArtyOnPlayer { file = "functions\misc\fn_callArtyOnPlayer.sqf"; };
+			class checkIfPlayerInSafezone { file = "functions\misc\fn_checkIfPlayerInSafezone.sqf"; };
+			class monitorPlayersSafezone { file = "functions\misc\fn_monitorPlayersSafezone.sqf"; };
+
+		};
+
 	};
 
 };
