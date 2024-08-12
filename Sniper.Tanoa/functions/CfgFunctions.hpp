@@ -13,7 +13,12 @@ class CfgFunctions
 		class cfg
 		{
 
-			class playableAreaDiameter { file = "functions\cfg\fn_playableAreaDiameter.sqf"; };
+			class getArtyProbability { file = "functions\cfg\fn_getArtyProbability.sqf"; };
+			class getOutOfZoneArtySafeDistance { file = "functions\cfg\fn_getOutOfZoneArtySafeDistance.sqf"; };
+			class getOutOfZoneArtySpread { file = "functions\cfg\fn_getOutOfZoneArtySpread.sqf"; };
+			class getParachuteSpawnAltitude { file = "functions\cfg\fn_getParachuteSpawnAltitude.sqf"; };
+			class getPlayableAreaRadius { file = "functions\cfg\fn_getPlayableAreaRadius.sqf"; };
+			class getPlayerCount { file = "functions\cfg\fn_getPlayerCount.sqf"; };
 
 		};
 
@@ -39,6 +44,7 @@ class CfgFunctions
 			class callArtyOnPlayer { file = "functions\misc\fn_callArtyOnPlayer.sqf"; };
 			class checkIfPlayerInSafezone { file = "functions\misc\fn_checkIfPlayerInSafezone.sqf"; };
 			class monitorPlayersSafezone { file = "functions\misc\fn_monitorPlayersSafezone.sqf"; };
+			class spawnParachute { file = "functions\misc\fn_spawnParachute.sqf"; };
 
 		};
 
