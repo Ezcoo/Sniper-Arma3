@@ -6,4 +6,8 @@ systemChat "Paradropping player...";
 
 player setVariable ["sniper_StartLoadout", getUnitLoadout player];
 
+player enableStamina false;
+
 [player] call sniper_fnc_setupPlayerEHs;
+
+[] spawn sniper_fnc_monitorPlayersProximity;
