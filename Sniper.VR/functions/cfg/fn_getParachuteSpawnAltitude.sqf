@@ -1,3 +1,5 @@
-private _parachuteSpawnAltitude = 300;
+
+// DEBUG
+private _parachuteSpawnAltitude = 50;
 
 _parachuteSpawnAltitude;

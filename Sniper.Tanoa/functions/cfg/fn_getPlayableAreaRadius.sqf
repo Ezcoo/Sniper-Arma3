@@ -4,7 +4,8 @@ private _areaRadius = 0;
 
 switch (true) do
 {
-    case (_playerCount < 5): {_areaRadius = 250;};
+    //DEBUG
+    case (_playerCount < 5): {_areaRadius = 75;};
     case (_playerCount >= 5 && _playerCount < 10): {_areaRadius = 375;};
     case (_playerCount >= 10 && _playerCount < 20): {_areaRadius = 500;};
     case (_playerCount >= 20 && _playerCount < 30): {_areaRadius = 750;};
