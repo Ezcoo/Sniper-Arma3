@@ -1,12 +1,9 @@
 params ["_previousPlayableAreaSize", "_currentPlayableAreaSize"];
 
 private _areaSizeDifference = _previousPlayableAreaSize - _currentPlayableAreaSize;
-
 private _areaSizeNow = _previousPlayableAreaSize;
-
 private _step = _areaSizeDifference / 6;
 
-/*
 if (_step > 2) then {
     _step = 2;
 };
@@ -14,7 +11,6 @@ if (_step > 2) then {
 if (_step < -2) then {
     _step = -2;
 };
-*/
 
 
 if (_areaSizeDifference > 0) then {
