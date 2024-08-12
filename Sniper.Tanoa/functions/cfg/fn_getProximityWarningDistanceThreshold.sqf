@@ -1,0 +1,3 @@
+private _proximityWarningDistanceThreshold = 50;
+
+_proximityWarningDistanceThreshold;
