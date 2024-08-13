@@ -20,6 +20,8 @@ class CfgFunctions
 			class getPlayableAreaRadius { file = "functions\cfg\fn_getPlayableAreaRadius.sqf"; };
 			class getPlayerBounty { file = "functions\cfg\fn_getPlayerBounty.sqf"; };
 			class getPlayerCount { file = "functions\cfg\fn_getPlayerCount.sqf"; };
+			class getProximityWarningDistanceThreshold { file = "functions\cfg\fn_getProximityWarningDistanceThreshold.sqf"; };
+			class getProximityWarningProbability { file = "functions\cfg\fn_getProximityWarningProbability.sqf"; };
 
 		};
 
