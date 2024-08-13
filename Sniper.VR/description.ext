@@ -10,3 +10,5 @@ corpseManagerMode = 2;
 corpseLimit = 1;
 corpseRemovalMinTime = 30;
 corpseRemovalMaxTime = 60;
+
+disabledAI = 1;
